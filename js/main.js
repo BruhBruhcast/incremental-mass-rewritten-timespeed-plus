@@ -19,7 +19,7 @@ const CONFIRMS = ['rp', 'bh', 'atom', 'sn', 'qu', 'br', 'dark', 'inf']
 const FORMS = {
     getPreInfGlobalSpeed() {
         let x = GPEffect(5)
-        
+        x = x.mul(100)
         if (tmp.inf_unl) x = x.mul(10).mul(theoremEff('time',0))
 
         if (hasUpgrade('br',21)) x = x.pow(upgEffect(4,21))
