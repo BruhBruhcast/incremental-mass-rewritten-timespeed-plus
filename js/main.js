@@ -22,7 +22,7 @@ const FORMS = {
         if (tmp.inf_unl) x = x.mul(10).mul(theoremEff('time',0))
 
         if (hasUpgrade('br',21)) x = x.pow(upgEffect(4,21))
-        x = x.mul(100)
+        x = x.mul(1000)
 
         return x
     },
@@ -41,7 +41,7 @@ const FORMS = {
         if (tmp.inf_unl) x = x.pow(theoremEff('time',1))
 
         if (QCs.active()) x = x.div(tmp.qu.qc_eff[1])
-        x = x.mul(100)
+        x = x.mul(1000)
 
         return x.mul(inf)
     },
